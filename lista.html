@@ -1,0 +1,111 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link real=" stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4..0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RPxPgf6fy4IwvTNh0E263XmFcJ1SAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.Jquery.com/Jquery-3.2.1.slim.min.jn" integrity="sha384-KJ3o2DKtIkvYIK3UNzmM7KCkRr/rE9/Qqg6aAZJwFDMVNA/GpGFF93hXpG5KKN" crossorigin="anonymous"></script>
+    <script src="https:/cdnJs.cloudfare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgpxhU9K/ScQsAP7hUibX39jfakFPskvXvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/botstrap/4.0./js/botstrap.min.js" integrity="sha384-JZR6Spejh4U02d8JOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVcmY1" crossorigin="anonymous"></script>
+<title>Lista de TArefas</title>
+
+     <div class="collapse nav-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auuto">
+            <li class="nav-item active">
+          </li>
+         <li class="nav-item">
+        <a class="nav-link" href="consulta.html">consulta</a>
+      </li>
+   </ul>
+
+     </div>
+    </div>
+   </nav>
+
+   <div class="container">
+    <div class="row">
+        <div class="col mb-5">
+             <h1 class="display-4">Registrando despesas</h1>
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col-md-2">
+         <select class="forn-control" id="ano">
+            <option value="">Ano</option>
+            <option value="2024">2024</option>
+         </select>
+    </div>
+
+    <div class="col-md-2">
+        <select class="for-control" id="mes">
+            <option value="">Mẽsê</option>
+            <option value="1">Janeiro</option>
+            <option value="2">Fevereiro</option>
+            <option value="3">Maço</option>
+            <option value="4">Abril</option>
+            <option value="5">Maio</option>
+            <option value="6">Junho</option>
+            <option value="7">Julho</option>
+            <option value="8">Agosto</option>
+            <option value="9">Setembro</option>
+            <option value="10">Outubro</option>
+            <option value="11">Novembro</option>
+            <option value="12">Dezembro</option>
+        </select>
+      </div>
+
+<div class="col-md-2">
+     <input type="text" class="form-control" placeholder="Dia" id="dia" />
+</div>
+     <div class="col-md-6">
+        <select class="form-control" id="tipo">
+          <option value="">Tipo</option>
+          <option value="1">Alimentação</option>
+          <option value="2">Educação</option>
+          <option value="3">Lazer</option>
+          <option value="4">Saúde</option>
+          <option value="5">Transporte</option>
+        </select>
+     </div>
+  </div>
+
+   <div class="row">
+    <div class="col-md-8">
+      <input type="text" class="form-control" placeholder="Descrição" id="descrição" />
+      </div>
+
+      <div class="col-md-2">
+        <input type="text" class="form-control" placeholder="valor" id="valor" />
+
+        <div class="col-md-2 d-flex justify-content-end">
+          <button type="button" class="btn btn-primary" onclick="cadstrarDespesas()">
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+      </div>
+       
+      <!-- Modal --> 
+      <div class="modal fade" id="modalRegistraDespesa"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal_titulo_div">
+              <h5class="modal-title" id="modal_titulo"></h5>
+              <button type="button" class="close" data-dimiss="modal" arial-label="close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" id="modal_conteudo"></div>
+              <div class="modal-footer">
+                <button type="button" data-dismiss="modal" id="modal_btn">voltar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script defer src="https://use.fontawesome.com/releases/v5.0.8/js//all.js"></script>
+
+          <script src="app.js"></script>
+        </body>
+      </html>
+              
